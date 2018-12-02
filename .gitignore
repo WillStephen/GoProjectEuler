@@ -13,3 +13,6 @@
 
 # VS Code files
 .vscode
+
+# debug
+solutions/debug
