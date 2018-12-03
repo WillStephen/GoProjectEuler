@@ -30,6 +30,7 @@ steps:
         curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
         dep ensure
     fi
+    cd bin
     ls
     go build -v .
   workingDirectory: '$(modulePath)'
