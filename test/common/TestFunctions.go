@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-// AssertEqual asserts tha two variables are equal
+// AssertEqual asserts that two variables are equal
 func AssertEqual(t *testing.T, a interface{}, b interface{}, message string) {
 	if a == b {
 		return
