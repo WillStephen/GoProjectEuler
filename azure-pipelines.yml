@@ -9,7 +9,7 @@ pool:
 variables:
   GOBIN:  '$(GOPATH)/bin' # Go binaries path
   GOROOT: '/usr/local/go1.11' # Go installation path
-  GOPATH: '$(system.defaultWorkingDirectory)/.git' # Go workspace path
+  GOPATH: '$(system.defaultWorkingDirectory)' # Go workspace path
   modulePath: '$(GOPATH)/$(build.repository.name)' # Path to the module's code
 
 steps:
