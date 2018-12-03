@@ -30,10 +30,10 @@ steps:
         curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
         dep ensure
     fi
-        ls
-    echo 'Listing...'
-    find .
-    echo 'Done listing.'
+    pwd
+    cd solutions
+    pwd
+    ls
     go build -v .
   workingDirectory: '$(modulePath)'
   displayName: 'Get dependencies, then build'
