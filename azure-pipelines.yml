@@ -47,5 +47,5 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'xUnit'
+    testResultsFormat: 'JUnit'
     testResultsFiles: $(System.DefaultWorkingDirectory)/**/tests.xml
