@@ -1,14 +1,7 @@
 // https://projecteuler.net/problem=1
 
-package main
+package solutions
 
-import (
-	"fmt"
-)
-
-// getMultiplesOf takes an upper limit and any number of target numbers, and
-// finds any number between 1 and the upper limit that are multiples of any
-// of the target numbers
 func getMultiplesOf(upperLim int, targets ...int) []int {
 	multiples := []int{}
 
@@ -24,7 +17,6 @@ func getMultiplesOf(upperLim int, targets ...int) []int {
 	return multiples
 }
 
-// sum returns the sum of a slice of numbers
 func sum(numbers []int) int {
 	sum := 0
 	for i := range numbers {
@@ -34,9 +26,10 @@ func sum(numbers []int) int {
 	return sum
 }
 
-func main() {
+// RunSolution returns the sum of all multiples of 3 and 5 below 1000
+func RunSolution1() int {
 	multiples := getMultiplesOf(999, 3, 5)
 	sum := sum(multiples)
 
-	fmt.Println(sum)
+	return sum
 }
