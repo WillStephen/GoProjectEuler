@@ -37,6 +37,12 @@ steps:
   displayName: 'Get dependencies, then build'
 
 - script: |
-    go test -v
+    go get github.com/tebeka/go2xunit
+    go test -v | go2xunit -output tests.xml
   workingDirectory: '$(modulePath)/test'
   displayName: 'Run unit tests'
+
+- task: PublishTestResults@2
+  inputs:
+    testRunner: xUnit
+    testResultsFiles: $(System.DefaultWorkingDirectory)/**/tests.xml
