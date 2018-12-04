@@ -40,9 +40,7 @@ steps:
     go get github.com/tebeka/go2xunit
     go test -v | go2xunit -output tests.xml
     ls
-    cd ..
-    echo "Going up"
-    ls
+    cat tests.xml
     echo $(System.DefaultWorkingDirectory)
   workingDirectory: '$(modulePath)/test'
   displayName: 'Run unit tests'
