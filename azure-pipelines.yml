@@ -44,7 +44,7 @@ steps:
   workingDirectory: '$(modulePath)/test'
   displayName: 'Run unit tests'
 
-- task: PublishTestResults@2
+- task: Publish test results
   inputs:
     testRunner: JUnit
     testResultsFiles: $(modulePath)/test/junit.xml
