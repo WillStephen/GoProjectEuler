@@ -38,7 +38,7 @@ steps:
 
 - script: |
     go get github.com/tebeka/go2xunit
-    go test -v | go2xunit -output tests.xml
+    go test -v | go2xunit > tests.xml
     ls
     cat tests.xml
     echo $(System.DefaultWorkingDirectory)
@@ -47,5 +47,5 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'JUnit'
+    testResultsFormat: 'xUnit'
     testResultsFiles: $(System.DefaultWorkingDirectory)/**/tests.xml
