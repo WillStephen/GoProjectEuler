@@ -42,6 +42,7 @@ steps:
     echo "---------"
     pwd
   workingDirectory: '$(modulePath)/test'
+  continueOnError: 'true'
   displayName: 'Run unit tests'
 
 - task: PublishTestResults@1
