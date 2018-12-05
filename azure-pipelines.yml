@@ -41,6 +41,7 @@ steps:
     go test -v | go2xunit > tests.xml
     ls
     cat tests.xml
+    readlink -f tests.xml
     echo $(System.DefaultWorkingDirectory)
   workingDirectory: '$(modulePath)/test'
   displayName: 'Run unit tests'
