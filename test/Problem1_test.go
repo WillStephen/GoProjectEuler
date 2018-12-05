@@ -12,9 +12,3 @@ func TestProblem1(t *testing.T) {
 
 	common.AssertEqual(t, 233168, result, "")
 }
-
-func TestShouldFail(t *testing.T) {
-	result := solutions.RunSolution1()
-
-	common.AssertEqual(t, 233164, result, "")
-}
