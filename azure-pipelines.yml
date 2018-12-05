@@ -45,11 +45,6 @@ steps:
   failOnStderr: true
   displayName: 'Run unit tests'
 
-- task: Go@0
-  inputs:
-    command: test
-    workingDirectory: '$(modulePath)/test'
-
 - task: PublishTestResults@1
   inputs:
     testRunner: JUnit
