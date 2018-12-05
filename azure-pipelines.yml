@@ -43,6 +43,8 @@ steps:
     cat tests.xml
     readlink -f tests.xml
     echo $(System.DefaultWorkingDirectory)
+    echo "---------"
+    pwd
   workingDirectory: '$(modulePath)/test'
   displayName: 'Run unit tests'
 
