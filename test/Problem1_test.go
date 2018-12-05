@@ -1,20 +1,20 @@
 package test
 
 import (
+	"GoProjectEuler/common"
 	"GoProjectEuler/solutions"
-	c "GoProjectEuler/test/common"
 	"testing"
 )
 
-// TestMultiplesOf3And5 euofh
-func TestMultiplesOf3And5(t *testing.T) {
+// TestProblem1
+func TestProblem1(t *testing.T) {
 	result := solutions.RunSolution1()
 
-	c.AssertEqual(t, result, 233168, "")
+	common.AssertEqual(t, 233168, result, "")
 }
 
 func TestShouldFail(t *testing.T) {
 	result := solutions.RunSolution1()
 
-	c.AssertEqual(t, result, 233164, "")
+	common.AssertEqual(t, 233164, result, "")
 }
