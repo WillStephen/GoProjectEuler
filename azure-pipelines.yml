@@ -38,7 +38,7 @@ steps:
 
 - script: |
     go get github.com/jstemmer/go-junit-report
-    go test -v 2>&1 | go-junit-report > junit.xml
+    go test -v
     echo "---------"
     pwd
   workingDirectory: '$(modulePath)/test'
