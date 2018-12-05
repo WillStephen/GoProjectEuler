@@ -48,7 +48,6 @@ steps:
 - task: Go@0
   inputs:
     command: test
-    arguments: '-v'
     workingDirectory: '$(modulePath)/test'
 
 - task: PublishTestResults@1
