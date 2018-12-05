@@ -42,10 +42,11 @@ steps:
     echo "---------"
     pwd
   workingDirectory: '$(modulePath)/test'
-  continueOnError: 'true'
+  failOnStderr: true
   displayName: 'Run unit tests'
 
 - task: PublishTestResults@1
   inputs:
     testRunner: JUnit
     testResultsFiles: $(modulePath)/test/junit.xml
+    condition: always() 
