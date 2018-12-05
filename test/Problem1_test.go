@@ -12,3 +12,9 @@ func TestMultiplesOf3And5(t *testing.T) {
 
 	c.AssertEqual(t, result, 233168, "")
 }
+
+func TestShouldFail(t *testing.T) {
+	result := solutions.RunSolution1()
+
+	c.AssertEqual(t, result, 233164, "")
+}
