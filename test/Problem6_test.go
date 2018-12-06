@@ -6,7 +6,6 @@ import (
 	"testing"
 )
 
-// TestProblem5
 func TestProblem6(t *testing.T) {
 	result := solutions.RunSolution6()
 

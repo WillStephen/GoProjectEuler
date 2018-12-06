@@ -29,7 +29,7 @@ func getSmallestNumberDivisibleByRange(min int, max int) int {
 	return 0
 }
 
-// RunSolution5
+// RunSolution5 returns the smallest number divisible by all numbers 1-20 inclusive
 func RunSolution5() int {
 	return getSmallestNumberDivisibleByRange(1, 20)
 }
