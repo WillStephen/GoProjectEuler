@@ -38,7 +38,7 @@ steps:
 
 - script: |
     go get github.com/jstemmer/go-junit-report
-    go test -v
+    go test -v2 >&1 | go-junit-report > tests.xml
     echo "---------"
     pwd
   workingDirectory: '$(modulePath)/test'
@@ -48,5 +48,5 @@ steps:
 - task: PublishTestResults@1
   inputs:
     testRunner: JUnit
-    testResultsFiles: $(modulePath)/test/junit.xml
+    testResultsFiles: $(modulePath)/test/tests.xml
     condition: always() 
