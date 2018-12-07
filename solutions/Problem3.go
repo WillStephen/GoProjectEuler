@@ -2,14 +2,7 @@
 
 package solutions
 
-func isPrime(num int) bool {
-	for i := 2; i < (num / 2); i++ {
-		if num%i == 0 {
-			return false
-		}
-	}
-	return true
-}
+import "GoProjectEuler/common"
 
 func getLargestPrimeFactor(num int) int {
 	for i := 2; i < (num / 2); i++ {
@@ -19,7 +12,7 @@ func getLargestPrimeFactor(num int) int {
 		}
 
 		factor := num / i
-		if isPrime(factor) {
+		if common.IsPrime(factor) {
 			return factor
 		}
 	}
