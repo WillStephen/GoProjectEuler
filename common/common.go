@@ -26,6 +26,14 @@ func SumRange(min int, max int) int {
 
 // IsPrime determines whether a number is prime
 func IsPrime(num int) bool {
+	// special cases
+	if num == 1 {
+		return false
+	}
+	if num == 2 {
+		return true
+	}
+
 	if num%2 == 0 {
 		return false
 	}
@@ -35,4 +43,8 @@ func IsPrime(num int) bool {
 		}
 	}
 	return true
+}
+
+func remove(slice []int, index int) []int {
+	return append(slice[:index], slice[index+1:]...)
 }
