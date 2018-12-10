@@ -12,7 +12,7 @@ func TestProblem10(t *testing.T) {
 	common.AssertEqual(t, 142913828922, result, "")
 }
 
-func BenchmarkProblem9(b *testing.B) {
+func BenchmarkProblem10(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		solutions.RunSolution10()
 	}
