@@ -8,7 +8,7 @@ import (
 
 func getNthPrime(n int) int {
 	nthPrimeFound := false
-	primeCount := 0
+	primeCount := 1 // 2 is the only even prime
 	currentNumber := 1
 
 	for !nthPrimeFound {
