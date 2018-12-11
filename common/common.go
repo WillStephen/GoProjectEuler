@@ -48,3 +48,25 @@ func IsPrime(num int) bool {
 func remove(slice []int, index int) []int {
 	return append(slice[:index], slice[index+1:]...)
 }
+
+// Min returns the smallest integer
+func Min(nums ...int) int {
+	min := nums[0]
+	for _, i := range nums {
+		if i < min {
+			min = i
+		}
+	}
+	return min
+}
+
+// Max returns the largest integer
+func Max(nums ...int) int {
+	max := nums[0]
+	for _, i := range nums {
+		if i > max {
+			max = i
+		}
+	}
+	return max
+}
