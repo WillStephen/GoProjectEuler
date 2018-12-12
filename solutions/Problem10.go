@@ -2,7 +2,7 @@
 
 package solutions
 
-import "GoProjectEuler/common"
+import "WillStephen/GoProjectEuler/common"
 
 func getPrimesBelow(limit int) []int {
 	primes := []int{}

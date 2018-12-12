@@ -2,7 +2,7 @@
 
 package solutions
 
-import "GoProjectEuler/common"
+import "WillStephen/GoProjectEuler/common"
 
 func getLargestPrimeFactor(num int) int {
 	for i := 2; i < (num / 2); i++ {

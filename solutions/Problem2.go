@@ -3,7 +3,7 @@
 package solutions
 
 import (
-	"GoProjectEuler/common"
+	"WillStephen/GoProjectEuler/common"
 )
 
 func isEven(num int) bool {

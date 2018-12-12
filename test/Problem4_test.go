@@ -1,8 +1,8 @@
 package test
 
 import (
-	"GoProjectEuler/common"
-	"GoProjectEuler/solutions"
+	"WillStephen/GoProjectEuler/solutions"
+	"WillStephen/GoProjectEuler/common"
 	"testing"
 )
 
