@@ -2,7 +2,7 @@
 
 package solutions
 
-import "GoProjectEuler/common"
+import "WillStephen/GoProjectEuler/common"
 
 func getDownLeftProduct(grid [][]int, adjacentCount int, x int, y int) int {
 	if x < adjacentCount-1 || y > len(grid)-adjacentCount {
