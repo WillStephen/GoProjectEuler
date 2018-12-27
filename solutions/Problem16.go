@@ -14,7 +14,7 @@ func getPower(base int, power int) *big.Int {
 	return new(big.Int).Exp(bigBase, bigPower, nil)
 }
 
-func splitToChars(num *big.Int) []string {
+func splitBigIntToChars(num *big.Int) []string {
 	return strings.Split(num.String(), "")
 }
 
@@ -31,6 +31,6 @@ func sumCharacters(numChars []string) int {
 // RunSolution16 finds sum of the digits of 2^1000
 func RunSolution16() int {
 	num := getPower(2, 1000)
-	digitChars := splitToChars(num)
+	digitChars := splitBigIntToChars(num)
 	return sumCharacters(digitChars)
 }
