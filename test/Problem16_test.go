@@ -9,7 +9,7 @@ import (
 func TestProblem16(t *testing.T) {
 	result := solutions.RunSolution16()
 
-	common.AssertEqual(t, 837799, result, "")
+	common.AssertEqual(t, 1366, result, "")
 }
 
 func BenchmarkProblem16(b *testing.B) {
