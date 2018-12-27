@@ -2,6 +2,9 @@ package common
 
 import (
 	"math"
+	"math/big"
+	"strconv"
+	"strings"
 )
 
 // Sum sums a slice of ints
@@ -69,4 +72,20 @@ func Max(nums ...int) int {
 		}
 	}
 	return max
+}
+
+// SplitBigIntToChars splits a big int into a slice of strings, each of length 1
+func SplitBigIntToChars(num *big.Int) []string {
+	return strings.Split(num.String(), "")
+}
+
+// SumCharacters sums a slice of number strings
+func SumCharacters(numChars []string) int {
+	total := 0
+	for _, i := range numChars {
+		num, _ := strconv.Atoi(i)
+		total += num
+	}
+
+	return total
 }
