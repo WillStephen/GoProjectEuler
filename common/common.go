@@ -89,3 +89,12 @@ func SumCharacters(numChars []string) int {
 
 	return total
 }
+
+// Factorial returns the factorial of a number
+func Factorial(num int) int {
+	for i := num - 1; i > 1; i-- {
+		num *= i
+	}
+
+	return num
+}
